@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Helvetica LT Std';
+  src: url('/src/assets/fonts/Helvetica LT Std/HelveticaLTStd-Roman.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica LT Std';
+  src: url('/src/assets/fonts/Helvetica LT Std/HelveticaLTStd-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
