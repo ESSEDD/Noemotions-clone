@@ -89,8 +89,10 @@ const products = [
 ];
 ---
 
-<section class="py-16 px-4 max-w-7xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-12">New Arrivals</h2>
+<section class="py-16 px-4 max-w-full mx-auto">
+    <div class="flex flex-row items-start"></div>
+    <h2 class="text-l font-bold mb-4 uppercase text-noemotions-blue">New Arrivals</h2>
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {products.map(product => (
             <NewArrivalsCard 

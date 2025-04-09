@@ -12,14 +12,13 @@ const { frontImage, backImage, productName, price, altText = "Product Image" } =
 
 <div class="product-card relative group">
     <div class="transition-opacity duration-300 group-hover:opacity-0">
-        <img src={frontImage} alt={altText} class="w-full h-84 object-cover">
+        <img src={frontImage} alt={altText} class="w-full h-85 object-cover">
         <h3 class="mt-4 text-lg font-medium">{productName}</h3>
         <p class="text-gray-600">${price}</p>
     </div>
     <div class="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-        <img src={backImage} alt={altText} class="w-full h-64 object-cover">
+        <img src={backImage} alt={altText} class="w-full h-85 object-cover">
         <h3 class="mt-4 text-lg font-medium">{productName}</h3>
         <p class="text-gray-600">${price}</p>
-        <button class="mt-2 bg-black text-white px-4 py-2 w-full">Add to Cart</button>
-    </div>
+        </div>
 </div>
