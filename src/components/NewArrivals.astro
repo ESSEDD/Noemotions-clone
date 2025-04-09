@@ -1,0 +1,111 @@
+---
+import NewArrivalsCard from './NewArrivalsCard.astro';
+
+const products = [
+    {
+        frontImage: "/images/hoodie-1583-front.webp",
+        backImage: "/images/hoodie-1583-back.webp",
+        productName: "Product Name",
+        price: 99.99,
+        altText: "Product 1"
+    },
+    {
+        frontImage: "/images/hoodie-1583-front.webp",
+        backImage: "/images/hoodie-1583-back.webp",
+        productName: "Product Name",
+        price: 99.99,
+        altText: "Product 1"
+    },
+    {
+        frontImage: "/images/hoodie-1583-front.webp",
+        backImage: "/images/hoodie-1583-back.webp",
+        productName: "Product Name",
+        price: 99.99,
+        altText: "Product 1"
+    },
+    {
+        frontImage: "/images/hoodie-1583-front.webp",
+        backImage: "/images/hoodie-1583-back.webp",
+        productName: "Product Name",
+        price: 99.99,
+        altText: "Product 1"
+    },
+    {
+        frontImage: "/images/hoodie-1583-front.webp",
+        backImage: "/images/hoodie-1583-back.webp",
+        productName: "Product Name",
+        price: 99.99,
+        altText: "Product 1"
+    },
+    {
+        frontImage: "/images/hoodie-1583-front.webp",
+        backImage: "/images/hoodie-1583-back.webp",
+        productName: "Product Name",
+        price: 99.99,
+        altText: "Product 1"
+    },
+    {
+        frontImage: "/images/hoodie-1583-front.webp",
+        backImage: "/images/hoodie-1583-back.webp",
+        productName: "Product Name",
+        price: 99.99,
+        altText: "Product 1"
+    },
+    {
+        frontImage: "/images/hoodie-1583-front.webp",
+        backImage: "/images/hoodie-1583-back.webp",
+        productName: "Product Name",
+        price: 99.99,
+        altText: "Product 1"
+    },
+    {
+        frontImage: "/images/hoodie-1583-front.webp",
+        backImage: "/images/hoodie-1583-back.webp",
+        productName: "Product Name",
+        price: 99.99,
+        altText: "Product 1"
+    },
+    {
+        frontImage: "/images/hoodie-1583-front.webp",
+        backImage: "/images/hoodie-1583-back.webp",
+        productName: "Product Name",
+        price: 99.99,
+        altText: "Product 1"
+    },
+    {
+        frontImage: "/images/hoodie-1583-front.webp",
+        backImage: "/images/hoodie-1583-back.webp",
+        productName: "Product Name",
+        price: 99.99,
+        altText: "Product 1"
+    },
+    {
+        frontImage: "/images/hoodie-1583-front.webp",
+        backImage: "/images/hoodie-1583-back.webp",
+        productName: "Product Name",
+        price: 99.99,
+        altText: "Product 1"
+    },
+];
+---
+
+<section class="py-16 px-4 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">New Arrivals</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {products.map(product => (
+            <NewArrivalsCard 
+                frontImage={product.frontImage}
+                backImage={product.backImage}
+                productName={product.productName}
+                price={product.price}
+                altText={product.altText}
+            />
+        ))}
+    </div>
+</section>
+
+<style>
+    .product-card {
+        cursor: pointer;
+    }
+</style>
